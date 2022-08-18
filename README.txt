@@ -10,3 +10,11 @@ One parameter, the pathname of the directory into which AFLW2000 was downloaded,
 python unpack_aflw.py AFLW2000
 
 --------------------------------------------------------------------------
+
+Unpack BioID V1.2
+
+One parameter, the pathname of the directory into which BioID was downloaded, e.g.
+
+python unpack_bioid.py BioID
+
+--------------------------------------------------------------------------
