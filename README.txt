@@ -9,6 +9,12 @@ One parameter, the pathname of the directory into which AFLW2000 was downloaded,
 
 python unpack_aflw.py AFLW2000
 
+Produces lists of:
+eye centres
+nose tips
+fixed landmarks (eye centres and nose tips)
+eye corners
+
 --------------------------------------------------------------------------
 
 Unpack BioID V1.2
@@ -16,5 +22,26 @@ Unpack BioID V1.2
 One parameter, the pathname of the directory into which BioID was downloaded, e.g.
 
 python unpack_bioid.py BioID
+
+Produces lists of:
+eye centres
+nose tips
+fixed landmarks (eye centres and nose tips)
+eye corners
+eye pupils
+alternative landmarks (eye pupils and nose bridges)
+
+--------------------------------------------------------------------------
+
+Unpack CelebA
+
+One parameter, the pathname of the directory into which CelebA was downloaded, e.g.
+
+python unpack_celeba.py CelebA
+
+Produces lists of:
+eye centres
+nose tips
+fixed landmarks (eye centres and nose tips)
 
 --------------------------------------------------------------------------
