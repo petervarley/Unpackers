@@ -45,3 +45,17 @@ nose tips
 fixed landmarks (eye centres and nose tips)
 
 --------------------------------------------------------------------------
+
+Unpack Dlib5
+
+One parameter, the pathname of the directory which contains dlib_faces_5points.train_cleaned.xml, e.g.
+
+python unpack_dlib5.py Dlib/dlib_faces_5points
+
+Produces lists of:
+eye centres
+noses (BEWARE: this is not the nose tip, it is the base of the septum)
+fixed landmarks (eye centres and noses (BEWARE as above))
+eye corners
+
+--------------------------------------------------------------------------
