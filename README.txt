@@ -4,6 +4,7 @@ and converts it into an easy-to-read and easy-to-use plain text format.
 --------------------------------------------------------------------------
 
 Unpack AFLW2000
+Find AFLW2000 at: http://www.cbsr.ia.ac.cn/users/xiangyuzhu/projects/3DDFA/main.htm
 
 One parameter, the pathname of the directory into which AFLW2000 was downloaded, e.g.
 
@@ -15,9 +16,14 @@ nose tips
 fixed landmarks (eye centres and nose tips)
 eye corners
 
+NOTES:
+
+You don't always get 2000 landmarks in each list, as some landmarks are not visible in some images.
+
 --------------------------------------------------------------------------
 
 Unpack BioID V1.2
+Find BioID at: https://www.bioid.com/facedb/
 
 One parameter, the pathname of the directory into which BioID was downloaded, e.g.
 
@@ -34,6 +40,7 @@ alternative landmarks (eye pupils and nose bridges)
 --------------------------------------------------------------------------
 
 Unpack CelebA
+Find CelebA at: https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html
 
 One parameter, the pathname of the directory into which CelebA was downloaded, e.g.
 
@@ -47,6 +54,7 @@ fixed landmarks (eye centres and nose tips)
 --------------------------------------------------------------------------
 
 Unpack Dlib5
+Find Dlib5 at: https://github.com/davisking/dlib-models and follow the link for "dlib 5-point face landmark dataset"
 
 One parameter, the pathname of the directory which contains dlib_faces_5points.train_cleaned.xml, e.g.
 
@@ -57,5 +65,30 @@ eye centres
 noses (BEWARE: this is not the nose tip, it is the base of the septum)
 fixed landmarks (eye centres and noses (BEWARE as above))
 eye corners
+
+--------------------------------------------------------------------------
+
+Unpack EVE gaze angles
+Find EVE at: https://ait.ethz.ch/projects/2020/EVE/ (the dataset is available on request, but you have to fill in a form)
+
+Two parameters:
+1. source: the pathname of the top-level directory which contains the downloaded EVE dataset
+2. destination: the pathname of the top-level directory which will eventually contain extracted and processed EVE images (the unpacker will create this, and it will have the same tree structure as the source)
+
+e.g.
+
+python unpack_eve_angles.py EVE/eve_dataset EVE/eve_unpacked
+
+Produces lists of gaze angles (left eye yaw and pitch, right eye yaw and pitch)
+There will be one such list, "metadata.txt", in each person-level directory of the destination directory tree,
+and it will list each frame of each video "webcam_c.mp4" in subdirectories of corresponding location in the source directory tree.
+
+NOTES:
+
+This unpacker does not extract the frames from the video.
+There will be separate tools for that, as extracted image data will be application-specific,
+whereas extracted metadata is application-agnostic.
+
+This unpacker requires version 2.10.0 of h5py, so may not run in your usual environment.
 
 --------------------------------------------------------------------------
