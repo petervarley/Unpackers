@@ -92,3 +92,17 @@ whereas extracted metadata is application-agnostic.
 This unpacker requires version 2.10.0 of h5py, so may not run in your usual environment.
 
 --------------------------------------------------------------------------
+
+Unpack Gaze360 gaze angles
+Find Gaze360 at: http://gaze360.csail.mit.edu/index.php (registration is required)
+
+One parameter, the pathname of the directory into which Gaze360 was downloaded
+(which should contain a subfolder named gaze360_dataset), e.g.
+
+python unpack_gaze360_angles.py Gaze360
+
+Produces two output files, which contain essentially the same information in different formats:
+[recording number] [person id] [image base filename excluding path] [yaw] [pitch] [distance]
+[image full filename including path] [yaw] [pitch]
+
+--------------------------------------------------------------------------
