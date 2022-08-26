@@ -106,3 +106,16 @@ Produces two output files, which contain essentially the same information in dif
 [image full filename including path] [yaw] [pitch]
 
 --------------------------------------------------------------------------
+
+Unpack NISLGaze gaze angles
+Find NISLGaze at: http://nislgaze.ust.hk/
+
+One parameter, the pathname of the directory into which NISLGaze was downloaded, e.g.
+
+python unpack_nislgaze_angles.py GEDDnet/NISLGaze
+
+Produces two output files, which contain essentially the same information in different formats:
+[person number] [person letter] [session number] [image base filename excluding path] [yaw] [pitch] [distance]
+[image full filename including path] [yaw] [pitch]
+
+--------------------------------------------------------------------------
