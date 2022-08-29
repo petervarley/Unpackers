@@ -118,4 +118,21 @@ Produces two output files, which contain essentially the same information in dif
 [person number] [person letter] [session number] [image base filename excluding path] [yaw] [pitch] [distance]
 [image full filename including path] [yaw] [pitch]
 
+ALSO stores the images themselves as .png files.
+Unlike the other unpackers, which only unpack metadata,
+this unpacker unpacks images too as they are provided in the same MATLAB file as the metadata, not as image or video files.
+
+--------------------------------------------------------------------------
+
+Unpack RT-GENE gaze angles
+Find RT-GENE at: https://zenodo.org/record/2529036#.Ywx7DXZByUk
+
+One parameter, the pathname of the directory into which Gaze360 was downloaded, e.g.
+
+python unpack_rtgene_angles.py RT-GENE/rtgene_dataset
+
+Produces two output files, which contain essentially the same information in different formats:
+[session number] [image base filename excluding path] [yaw] [pitch] [distance]
+[image full filename including path] [yaw] [pitch]
+
 --------------------------------------------------------------------------
