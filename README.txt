@@ -136,3 +136,17 @@ Produces two output files, which contain essentially the same information in dif
 [image full filename including path] [yaw] [pitch]
 
 --------------------------------------------------------------------------
+
+Unpack MPIIGaze gaze angles
+Find MPIIGaze at: https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning/research/gaze-based-human-computer-interaction/appearance-based-gaze-estimation-in-the-wild
+
+One parameter, the pathname of the directory into which the MPIIGaze dataset was downloaded, e.g.
+
+python unpack_mpiigaze_angles.py MPIIGaze/MPIIGaze
+
+Produces three output files, the first two of which contain essentially the same information in different formats:
+[person number] [day number] [image base filename excluding path] [yaw] [pitch] [distance]
+[image full filename including path] [yaw] [pitch]
+fixed landmarks (left and right eye centres ONLY)
+
+--------------------------------------------------------------------------
